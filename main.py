@@ -59,7 +59,7 @@ message_text = st.text_area("Mensaje de texto", height=150)
 # Opción para adjuntar imagen
 st.subheader("Adjuntar imagen (opcional)")
 image_file = st.file_uploader("Seleccionar imagen", type=["jpg", "jpeg", "png"])
-caption = st.text_input("Pie de imagen (opcional)")
+caption = st.text_area("Pie de imagen (opcional)", height=150)
 
 preview_col1, preview_col2 = st.columns(2)
 with preview_col1:
